@@ -1,0 +1,95 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<div class="container" id="display">
+    <form action="signup" onsubmit="return validation()" method="post">
+    	<span id="successTest" style="visibility:hidden"><h3><b>Registered successfully!</b></h3></span>
+    	<span id="errorTest" style="visibility:hidden"><h3><b>Username Already Exists</b></h3></span>
+    	<input type="hidden" name="action" value="insert"/>
+        <table align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name">
+                	<span id="nameTest" style="color:red; visibility:hidden">Please provide a name</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Role:</td>
+                <td><select id="role" name="role">
+                		<option>Select</option>
+                        <option>owner</option>
+                        <option>customer</option>
+                </select>
+                	<span id="roleTest" style="color:red; visibility:hidden">Please select a role</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" id="age" name="age">
+                	<span id="ageTest" style="color:red; visibility:hidden">Please provide an age</span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><select id="state" name="state">
+                		<option>Select</option>
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pennsylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virginia</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                </select>
+                	<span id="stateTest" style="color:red; visibility:hidden">Please select a state</span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Signup"></td>
+            </tr>
+        </table>
+    </form>
+</div>
